@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class DAO {
 	private Connection c;
 	public DAO() throws ClassNotFoundException,SQLException{
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.jdbc.Driver");
 		c=DriverManager.getConnection("jdbc:mysql://localhost:3306/carrental","root","Incapp@12");
 	}
 	public void closeConnection() throws SQLException {
